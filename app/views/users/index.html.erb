@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title> Index </title>
+</head>
+<body>
+	<h1> list Of all users </h1>
+	<% @user.each do |u| %>
+	<p> Name : <%= u.name  %></p>
+	<p> phone : <%= u.firstname %></p>
+	<p> Specialty : <%= u.specialty %></p>
+	<%= link_to 'show', user_path(u.id) %> 
+	<% end %>
+</body>
+</html>
